@@ -1,11 +1,21 @@
 <template>
-  <h1>Hello World!</h1>
+  <div>
+    <layout></layout>
+  </div>
 </template>
 <script>
-  export default {
-    name: 'App',
-    data: function() {
-      return {}
-    }
+import Layout from "./layout.vue"
+
+export default {
+  name: "App",
+  data () {
+    return { }
+  },
+  components: { 
+    Layout
+  }, 
+  mounted () {
+    // console.log("app is mounted!", this)
   }
+}
 </script>

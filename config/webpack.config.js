@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/scripts/index.js',
   output: {
     path: path.join(__dirname, './dist'),
-    filename: 'bundle.js'
+    filename: '[name].[hash].js'
   },
   module: {
     rules: [
@@ -20,6 +20,14 @@ module.exports = {
         loader: 'babel-loader',
         test: /\.js$/,
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          "style-loader",
+          "css-loader", 
+          "sass-loader" 
+        ]
       }
     ]
   },
