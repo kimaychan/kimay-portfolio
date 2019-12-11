@@ -1,22 +1,41 @@
 <template>
-  <div class="layout">
-    <header>
-      <div class="menu"></div>
+  <section class="layout">
+    <header class="main-nav">
+      <div class="main-logo">
+        <slot name="logo"></slot>
+      </div>
+      <div class="main-menu">
+        <slot name="menu"></slot>
+      </div>
     </header>
-    <aside class="side-nav">
-      <side-nav></side-nav>
-    </aside>
     <div class="content">
       <slot name="content"></slot>
     </div>
-  </div>
+  </section>
 </template>
 <script>
-import SideNav from "./side-nav.vue"
-export default {
-  components: { SideNav }
-}
+export default {}
 </script>
 <style lang="scss" scoped>
+  .main-nav {
+    border: dotted black 1px;
+    // clear float
+    zoom: 1;
+    &:after { 
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+    }
+    .main-logo { 
+      float: left;
+    }
+    .main-menu {
+      float: right;
+    }
+  }
+  
 </style>
 

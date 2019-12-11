@@ -1,6 +1,9 @@
 <template>
   <div>
-    <layout></layout>
+    <layout>
+      <div slot="logo"> hello </div>
+      <div slot="menu"> menu </div>
+    </layout>
   </div>
 </template>
 <script>
@@ -13,9 +16,7 @@ export default {
   },
   components: { 
     Layout
-  }, 
-  mounted () {
-    // console.log("app is mounted!", this)
   }
 }
 </script>
+<style lang="scss" scoped></style>
