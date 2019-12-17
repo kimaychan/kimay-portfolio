@@ -1,6 +1,6 @@
 <template>
-  <section class="basic-layout guideline">
-    <header class="main-nav guideline">
+  <section class="basic-layout">
+    <header class="main-nav with-guideline">
       <div class="main-logo">
         <slot name="logo"></slot>
       </div>
@@ -17,9 +17,6 @@
 export default {}
 </script>
 <style lang="scss" scoped>
-  .basic-layout {
-    padding: 2rem 4rem;
-  }
   .main-nav {
     // clear float
     zoom: 1;

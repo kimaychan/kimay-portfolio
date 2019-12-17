@@ -14,9 +14,10 @@ $pearl-blush: #E6DED3;
 body {
   background-color: $pearl-blush;
   margin: 0 auto;
+  color: $rose-value;
 }
 
-.guideline {
+.with-guideline {
   border: dotted black 1px; 
 }
 
