@@ -1,5 +1,5 @@
 <template>
-  <div class="headline with-guideline">
+  <div class="headline">
     <div class="headline-banner">
       <div class="banner-image with-guideline">
         [banner here]
@@ -13,37 +13,32 @@
         </p>
       </div>
     </div>
+   
   </div>
 </template>
 <style lang="scss" scoped>
+
   .headline {
-    width: 100%;
-    height: 35rem;
+    @media (min-width: 400px) { // for web
+      height: 100%;
+    }
+    background: #E6DED3;
+    height: 100vh;
     margin: 0 auto;
-    // clear float
-    zoom: 1;
-    &:after { 
-      content: ".";
-      display: block;
-      clear: both;
-      visibility: hidden;
-      line-height: 0;
-      height: 0;
-    }
-    .headline-banner, .headline-content { 
-      width: 48%; 
-    }
+    padding: 5rem 0 5rem 0;
+    border: solid .03px #acacac;
     .headline-banner {
-      float: left;
-      .banner-image {
-        float: right;
-        width: 30rem;
-        height: 30rem;
-        margin: 20px;
+      text-align: center;
+      padding: 1rem;
+      .banner-image { // dummy 
+        display: inline-block;
+        border-radius: 10px;
+        width: 10rem;
+        height: 10rem;
       }
     }
     .headline-content {
-      float: right;
+      text-align: center;
       padding: 1rem;
       .content {
         .title {
@@ -55,4 +50,5 @@
       }
     }
   }
+
 </style>

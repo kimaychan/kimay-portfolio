@@ -1,6 +1,6 @@
 <template>
   <section class="basic-layout">
-    <header class="main-nav with-guideline">
+    <header class="main-nav">
       <div class="main-logo">
         <slot name="logo"></slot>
       </div>
@@ -20,6 +20,7 @@ export default {}
   .main-nav {
     // clear float
     zoom: 1;
+    padding: .5rem;
     &:after { 
       content: ".";
       display: block;
@@ -35,6 +36,5 @@ export default {}
       float: right;
     }
   }
-  
 </style>
 
