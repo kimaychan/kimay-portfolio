@@ -20,10 +20,10 @@
 
   .headline {
     @media (min-width: 400px) { // for web
-      height: 100%;
+      // height: 100%;
     }
     background: #E6DED3;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     padding: 5rem 0 5rem 0;
     border: solid .03px #acacac;

@@ -5,6 +5,7 @@
       <div slot="menu"> [menu] </div>
       <div slot="content"> 
         <headline></headline>
+        <about-me></about-me>
       </div> 
     </layout>
   </div>
@@ -12,6 +13,7 @@
 <script>
 import Layout from "./layout.vue"
 import Headline from "./headline.vue"
+import AboutMe from "./aboutme.vue"
 
 export default {
   name: "App",
@@ -20,7 +22,8 @@ export default {
   },
   components: { 
     Layout,
-    Headline
+    Headline,
+    AboutMe
   }
 }
 </script>
