@@ -6,6 +6,7 @@
       <div slot="content"> 
         <headline></headline>
         <about-me></about-me>
+        <contact></contact>
       </div> 
     </layout>
   </div>
@@ -14,6 +15,7 @@
 import Layout from "./layout.vue"
 import Headline from "./headline.vue"
 import AboutMe from "./aboutme.vue"
+import Contact from "./contact.vue"
 
 export default {
   name: "App",
@@ -23,7 +25,8 @@ export default {
   components: { 
     Layout,
     Headline,
-    AboutMe
+    AboutMe,
+    Contact
   }
 }
 </script>

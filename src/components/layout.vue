@@ -11,10 +11,17 @@
     <div class="content">
       <slot name="content"></slot>
     </div>
+    <footer>
+      <credits></credits>
+    </footer>
   </section>
 </template>
 <script>
-export default {}
+  import Credits from "./credits.vue"
+
+  export default {
+    components: { Credits }
+  }
 </script>
 <style lang="scss" scoped>
   .main-nav {
