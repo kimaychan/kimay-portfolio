@@ -1,12 +1,12 @@
 <template>
   <div>
     <layout>
-      <div slot="logo"> [logo] </div>
-      <div slot="menu"> [menu] </div>
+      <div slot="logo"> M R B </div>
+      <div slot="menu"><nav-menu></nav-menu></div>
       <div slot="content"> 
-        <headline></headline>
-        <about-me></about-me>
-        <contact></contact>
+        <div id="home"><headline></headline></div>
+        <div id="about"><about-me></about-me></div>
+        <!-- <div id="contact"><contact></contact></div> -->
       </div> 
     </layout>
   </div>
@@ -16,6 +16,7 @@ import Layout from "./layout.vue"
 import Headline from "./headline.vue"
 import AboutMe from "./aboutme.vue"
 import Contact from "./contact.vue"
+import NavMenu from "./menu.vue"
 
 export default {
   name: "App",
@@ -26,7 +27,8 @@ export default {
     Layout,
     Headline,
     AboutMe,
-    Contact
+    Contact,
+    NavMenu
   }
 }
 </script>

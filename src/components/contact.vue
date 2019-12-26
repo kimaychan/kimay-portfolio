@@ -13,7 +13,7 @@ export default {
 
 <style lang="scss" scoped>
   .contact-details {
-    // height: 100%;
+    height: 15rem;
     text-align: center;
     .title {
       font-size: 2rem;

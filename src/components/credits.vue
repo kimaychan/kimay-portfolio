@@ -12,12 +12,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .credits {
-    border: solid .03px #acacac;
-    background-color: #DCE3E4;
-    color: #293858;
-    font-size: .5rem;
-    height: 1rem;
-    padding: .5rem;
-  }
 </style>

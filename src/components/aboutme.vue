@@ -1,10 +1,14 @@
 <template>
   <div class="about-me">
-    <span class="title">About Me</span>
+    <!-- <span class="title">About Me</span>
     <p class="description"> 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    </p> -->
+    <div class="skill-set">
+      <div class="back-end"></div>
+      <div class="front-end"></div>
+    </div>
   </div>
 </template>
 
@@ -16,9 +20,10 @@ export default {
 
 <style lang="scss">
   .about-me {
-    padding: 5rem;
-    // height: 100vh;
+    // padding: 5rem;
+    // height: 15rem;
     text-align: center;
+
     .title {
       font-size: 2rem;
       display: block;

@@ -24,24 +24,6 @@
   }
 </script>
 <style lang="scss" scoped>
-  .main-nav {
-    // clear float
-    zoom: 1;
-    padding: .5rem;
-    &:after { 
-      content: ".";
-      display: block;
-      clear: both;
-      visibility: hidden;
-      line-height: 0;
-      height: 0;
-    }
-    .main-logo { 
-      float: left;
-    }
-    .main-menu {
-      float: right;
-    }
-  }
+
 </style>
 
