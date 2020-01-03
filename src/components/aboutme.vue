@@ -33,3 +33,20 @@ export default {
 
 }
 </script>
+
+<style lang="scss" scoped>
+  .title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 200px;
+  }
+  .description {
+    @media (min-width: 400px) { // for web
+      width: 90%;
+    }
+    width: 100%;
+    display: inline-block;
+    font-size: .9rem;
+    // margin-left: 3rem;
+  }
+</style>
