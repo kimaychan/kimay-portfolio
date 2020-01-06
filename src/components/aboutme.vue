@@ -10,7 +10,10 @@
         <div class="about-content">
           <span class="title">About Me</span>
           <p class="description">
-            I enjoy learning new stuff and solving problems. I started professionally coding in 2016 and have since cultivated skills in using various programming tools for both my backend and frontend projects.
+            I enjoy learning new stuff and solving problems. I started professionally coding in 2016 and have since cultivated skills in using various programming tools for both my backend and frontend projects. 
+          </p>
+          <p class="description">
+            So far, I've used Scala, Java, Webpack, VueJS, NodeJS, SASS and HTML5 as tools in building software. I'm constantly learning new tools to add to this list.
           </p>
         </div>
        
