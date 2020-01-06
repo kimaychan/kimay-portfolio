@@ -143,6 +143,12 @@ body {
     background: $creamy;
     float: right;
     color: $nighttime;
+    .description {
+      font-size: 2rem;
+      a {
+        color: $nighttime;
+      }
+    }
   }
 }
 

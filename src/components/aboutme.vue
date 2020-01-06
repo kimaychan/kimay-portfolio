@@ -15,14 +15,16 @@
         </div>
        
       </div>
-      <div class="contact-me">
-        
-        <p class="description">
- <!-- Shopping can definitely take a toll on the bank account, so it’s best to put aside a budget prior to your trip! Some of our favorite stores in Myeongdong include Stylenanda, ALand, Indie Brand, 
-        Innisfree, Olive Young, Aritaum, and Etude House for a mix of clothing and beauty brands. 
-        After an exhausting couple of hours shopping, make your way to Ka Ho Dong Baekjeong for another 
-        KBBQ meal! -->
-        </p>   
+       <div class="contact-me">
+        <div class="about-content">
+          <span class="title">Contact Me</span>
+          <p class="description">
+            <a href="https://github.com/kimaychan"><i class="fab fa-github-square"></i></a>
+            <!-- <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fas fa-envelope-square"></i></a> -->
+            <a href="https://ph.linkedin.com/in/mikeerose03"><i class="fab fa-linkedin"></i></a>
+          </p>
+        </div>
+       
       </div>
     </div>
   </div>
