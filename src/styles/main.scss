@@ -103,16 +103,12 @@ body {
   }
 }
 
-.about-article {
+.about-me {
   @media (min-width: 400px) { // for web
-    // height: 100%;
-    .article-container, .contact-me {
+    .description, .work {
       width: 50%;
-      padding-top: 20%;
-      
-      // color: white;
     }
-    // clear float
+    // to clear float
     zoom: 1;
     &:after { 
       content: ".";
@@ -123,31 +119,23 @@ body {
       height: 0;
     }
   }
-
   width: 100%;
   height: 100%;
-  
-  .about-content {
-    margin-left: 10%;
-  }
-  .article-container, .contact-me {
+  .description, .work {
     padding-top: 10%;
     height: 20rem; 
   }
-  .article-container {
+  .description {
     background: $nighttime;
     float: left;
     color: $creamy;
   }
-  .contact-me {
+  .work {
     background: $creamy;
     float: right;
     color: $nighttime;
-    .description {
-      font-size: 2rem;
-      a {
-        color: $nighttime;
-      }
+    .content {
+      a { color: $nighttime; }
     }
   }
 }
