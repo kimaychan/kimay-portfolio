@@ -4,4 +4,7 @@
   </section>
 </template>
 
-<script lang="ts" src="./script.ts" />
+<script lang="ts">
+import KpContactPage from './script'
+export default KpContactPage
+</script>

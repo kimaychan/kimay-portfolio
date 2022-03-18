@@ -4,4 +4,7 @@
   </section>
 </template>
 
-<script lang="ts" src="./script.ts" />
+<script lang="ts">
+import KpProjectsPage from './script'
+export default KpProjectsPage
+</script>

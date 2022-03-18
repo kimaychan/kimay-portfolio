@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{243:function(e,n,o){"use strict";o.r(n);var t=o(2);n.default=t.a.extend({name:"KpSkillsPage",created:function(){console.log("mounted skills page!")}})}}]);
