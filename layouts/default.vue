@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <section class="kp-layout">
     <kp-header />
-    <div>
+    <div class="content">
       <nuxt-child />
     </div>
   </section>
@@ -27,5 +27,20 @@ export default Vue.extend({
 .page-enter,
 .page-leave-to {
   opacity: 0;
+}
+
+.kp-layout {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  header {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+  .content {
+    margin-top: 10px;
+    flex: 1 1 auto;
+  }
 }
 </style>
