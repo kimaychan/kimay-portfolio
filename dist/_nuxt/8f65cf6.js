@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{242:function(e,n,o){"use strict";o.r(n);var t=o(2);n.default=t.a.extend({name:"KpProjectsPage",created:function(){console.log("mounted projects page!")}})}}]);

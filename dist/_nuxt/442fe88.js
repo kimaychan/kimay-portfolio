@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{241:function(n,e,o){"use strict";o.r(e);var t=o(2);e.default=t.a.extend({name:"KpContactPage",created:function(){console.log("mounted contact page!")}})}}]);
