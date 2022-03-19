@@ -23,12 +23,13 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .link {
-  color: $faded-pink;
+  color: $rock-blue;
   text-decoration: none;
   text-transform: uppercase;
   &.active {
-    color: white;
+    color: $cavern-pink;
     font-weight: 600;
+    text-decoration: line-through;
   }
 }
 </style>

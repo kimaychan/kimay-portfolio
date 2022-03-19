@@ -4,12 +4,17 @@
       <img src="/images/portrait.JPG" alt="" srcset="/images/portrait.JPG">
     </div>
     <div class="hero">
-      <h1>
-        Hi! My name is Mikee Rose Bersabal,
-      </h1>
-      <p class="intro">
-        I'm a web developer based in Cebu, Philippines.
-      </p>
+      <div class="intro">
+        <h1>
+          Hi! My name is Mikee Rose Bersabal.
+        </h1>
+        <p>
+          I'm a Web Developer based in Cebu, Philippines.
+          <span>
+            I currently develop for Vauldex Technologies Inc.
+          </span>
+        </p>
+      </div>
     </div>
   </section>
 </template>
