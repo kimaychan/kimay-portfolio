@@ -6,11 +6,11 @@
     <div class="hero">
       <div class="intro">
         <h1>
-          Hi! My name is Mikee Rose Bersabal.
+          Hi! My name is <span class="highlight">Mikee Rose Bersabal</span>.
         </h1>
         <p>
-          I'm a Web Developer based in Cebu, Philippines.
-          <span>
+          I'm a <span class="highlight">Web Developer</span> based in Cebu, Philippines.
+          <span class="sub">
             I currently develop for Vauldex Technologies Inc.
           </span>
         </p>

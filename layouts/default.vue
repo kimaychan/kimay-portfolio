@@ -34,6 +34,7 @@ export default Vue.extend({
   display: flex;
   flex-flow: column;
   position: relative;
+  overflow: hidden;
   header {
     flex: 0 1 auto;
     width: 100%;

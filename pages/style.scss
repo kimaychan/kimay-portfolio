@@ -13,10 +13,12 @@
   }
   .hero {
     width: 50%;
+    position: relative;
     .intro {
+      position: absolute;
       h1 {
         font-size: 40px;
-        color: $cavern-pink;
+        color: $faded-pink;
         margin-bottom: 0;
         padding: 20px;
         position: relative;
@@ -33,12 +35,18 @@
           animation: slide-in 1s forwards;
           -webkit-animation: slide-in 1s forwards;
         }
+        span.highlight {
+          color: white;
+        }
       }
       p {
         font-size: 30px;
         margin-top: 20px;
         color: $faded-pink;
-        span {
+        span.highlight {
+          color: $cavern-pink;
+        }
+        span.sub {
           display: block;
           font-size: 16px;
           font-style: italic;
@@ -51,20 +59,32 @@
 @media only screen and (min-width: 745px) {
   .home-page {
     .hero {
-      position: relative;
       .intro {
-        position: absolute;
         left: -80px;
         top: 100px;
         p {
           position: absolute;
           left: 120px;
         }
-
       }
     }
   }
 }
+
+@media only screen and (max-width: 745px) {
+  .home-page {
+    .hero {
+      width: 100%;
+      .intro {
+        top: -120px;
+        h1, p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
 
 @keyframes slide-in {
   0% {
