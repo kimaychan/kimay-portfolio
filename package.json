@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "storybook": "npx nuxt storybook"
   },
   "dependencies": {
     "core-js": "^3.19.3",
@@ -19,11 +20,13 @@
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/storybook": "^4.3.0",
     "@nuxtjs/style-resources": "^1.2.1",
     "@vue/composition-api": "^1.4.9",
     "i": "^0.3.7",
     "npm": "^8.5.5",
     "sass": "^1.49.9",
-    "sass-loader": "^10.2.1"
+    "sass-loader": "^10.2.1",
+    "ts-node": "^10.7.0"
   }
 }

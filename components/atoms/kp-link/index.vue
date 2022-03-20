@@ -11,7 +11,8 @@ export default Vue.extend({
   props: {
     uri: {
       type: String,
-      required: true
+      required: true,
+      default: '/'
     },
     state: {
       type: String,

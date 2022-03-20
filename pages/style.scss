@@ -32,8 +32,8 @@
           left: 0;
           top: 0;
           z-index: -1;
-          animation: slide-in 1s forwards;
-          -webkit-animation: slide-in 1s forwards;
+          // animation: slide-in 1s forwards;
+          // -webkit-animation: slide-in 1s forwards;
         }
         span.highlight {
           color: white;
@@ -84,7 +84,6 @@
     }
   }
 }
-
 
 @keyframes slide-in {
   0% {

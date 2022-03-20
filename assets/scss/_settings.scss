@@ -1,5 +1,29 @@
+// colors
+
 $rhino: #334666;
 $gray-blue: #7484A6;
 $rock-blue: #9DABCB;
 $cavern-pink: #EBB7C3;
 $faded-pink: #C99FA9;
+
+// animations
+
+@keyframes slide-in {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
