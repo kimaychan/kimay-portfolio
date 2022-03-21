@@ -6,6 +6,7 @@
   width: 100%;
   height: 100%;
   .hero {
+    position: relative;
     .intro {
       h1 {
         font-size: 5vw;
@@ -28,6 +29,8 @@
         font-size: 2.5vw;
         margin: 0;
         color: $faded-pink;
+        animation: fade-in 4s ease;
+        -webkit-animation: fade-in 4s ease;
         span.highlight {
           color: $cavern-pink;
         }
@@ -39,5 +42,20 @@
         }
       }
     }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  80% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
   }
 }
