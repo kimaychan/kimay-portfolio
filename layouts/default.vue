@@ -38,6 +38,8 @@ export default Vue.extend({
   header {
     flex: 0 1 auto;
     width: 100%;
+    position: absolute;
+    top: 0;
   }
   .content {
     margin-top: 10px;

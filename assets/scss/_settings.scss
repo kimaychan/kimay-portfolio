@@ -1,10 +1,18 @@
 // colors
 
+// palette 1
 $rhino: #334666;
 $gray-blue: #7484A6;
 $rock-blue: #9DABCB;
 $cavern-pink: #EBB7C3;
 $faded-pink: #C99FA9;
+
+// palette 2
+$horizon: #478BA2;
+$mandy: #DE5B6D;
+$sunset-orange: #E9765B;
+$blush: #F2A490;
+$pale-aqua: #B9D4DB;
 
 // animations
 
@@ -26,4 +34,17 @@ $faded-pink: #C99FA9;
   100% {
     width: 100%;
   }
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $cavern-pink; }
 }
