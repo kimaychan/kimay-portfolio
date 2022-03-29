@@ -3,7 +3,7 @@
     <div class="hero">
       <div class="intro">
         <h1>
-          &lt;h1&gt; Hi, My name is <span class="highlight">Mikee</span>. &lt;/h1&gt;
+          <!-- &lt;h1&gt; --> Hi, My name is <span class="highlight">Mikee</span>. <!--&lt;/h1&gt;-->
         </h1>
         <p>
           I'm a <span class="highlight">Web Developer</span> based in Cebu, Philippines.

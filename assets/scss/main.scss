@@ -5,9 +5,18 @@
   src: url('assets/fonts/Poppins/Poppins-Regular.ttf')  format('truetype'),
 }
 
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('assets/fonts/Shrikhand/Shrikhand-Regular.ttf')  format('truetype'),
+}
+
 body {
-  background-color: $rhino;
-  font-family: 'Poppins';
+  font-family: 'Shrikhand';
+  background-image: linear-gradient(315deg,
+    $pink-flare 50%,
+    $almond,
+    $pale-aqua
+  );
 }
 
 html, body, #__layout, #__nuxt {
