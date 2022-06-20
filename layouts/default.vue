@@ -1,6 +1,5 @@
 <template>
   <section class="kp-layout">
-    <kp-header />
     <div class="content">
       <nuxt-child />
     </div>
@@ -20,30 +19,30 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.2s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
+// .page-enter-active,
+// .page-leave-active {
+//   transition: opacity 0.2s;
+// }
+// .page-enter,
+// .page-leave-to {
+//   opacity: 0;
+// }
 
 .kp-layout {
   height: 100%;
-  display: flex;
-  flex-flow: column;
-  position: relative;
-  overflow: hidden;
+  // display: flex;
+  // flex-flow: column;
+  // position: relative;
+  // overflow: hidden;
   header {
-    flex: 0 1 auto;
-    width: 100%;
-    position: absolute;
-    top: 0;
+    // flex: 0 1 auto;
+    // width: 100%;
+    // position: absolute;
+    // top: 0;
   }
   .content {
-    margin-top: 10px;
-    flex: 1 1 auto;
+    // margin-top: 10px;
+    // flex: 1 1 auto;
   }
 }
 </style>

@@ -12,11 +12,12 @@
 
 body {
   font-family: 'Shrikhand';
-  background-image: linear-gradient(315deg,
-    $pink-flare 50%,
-    $almond,
-    $pale-aqua
-  );
+  margin: 0;
+  // background-image: linear-gradient(315deg,
+  //   $pink-flare 50%,
+  //   $almond,
+  //   $pale-aqua
+  // );
 }
 
 html, body, #__layout, #__nuxt {
