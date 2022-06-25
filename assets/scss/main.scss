@@ -11,13 +11,8 @@
 }
 
 body {
-  font-family: 'Shrikhand';
   margin: 0;
-  // background-image: linear-gradient(315deg,
-  //   $pink-flare 50%,
-  //   $almond,
-  //   $pale-aqua
-  // );
+  background: $spring-sage;
 }
 
 html, body, #__layout, #__nuxt {
