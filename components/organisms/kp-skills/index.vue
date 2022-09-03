@@ -14,6 +14,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .skills {
   height: 100vh;
-  background: $dark-blush;
+  background: $vista-white;
 }
 </style>

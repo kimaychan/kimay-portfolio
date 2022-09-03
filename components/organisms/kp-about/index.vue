@@ -7,6 +7,6 @@
 <style lang="scss" scoped>
 .about {
   height: 100vh;
-  background: $cream-tan;
+  background: $vista-white;
 }
 </style>

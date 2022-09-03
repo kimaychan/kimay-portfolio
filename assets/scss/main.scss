@@ -10,6 +10,16 @@
   src: url('assets/fonts/Shrikhand/Shrikhand-Regular.ttf')  format('truetype'),
 }
 
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('assets/fonts/Crimson_Text/CrimsonText-Regular.ttf')  format('truetype'),
+}
+
+@font-face {
+  font-family: 'Crimson Text Bold';
+  src: url('assets/fonts/Crimson_Text/CrimsonText-Bold.ttf')  format('truetype'),
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <!-- TODO -->
+    <h1>
+      Hi, my name is Mikee. I'm a Web Developer.
+    </h1>
   </div>
 </template>
 
@@ -14,6 +16,15 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .home {
   height: 100vh;
-  background: $spring-sage;
+  background: $vista-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $black-cow;
+    margin: 0;
+    font-family: Crimson Text;
+    font-size: 36px;
+  }
 }
 </style>

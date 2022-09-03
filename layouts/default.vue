@@ -8,13 +8,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import KpHeader from '~/components/organisms/kp-header/index.vue'
 
 export default Vue.extend({
-  name: 'KpLayout',
-  components: {
-    KpHeader
-  }
+  name: 'KpLayout'
 })
 </script>
 
