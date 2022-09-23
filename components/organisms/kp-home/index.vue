@@ -6,9 +6,9 @@
     </header>
     <img class="home-banner" src="/images/self-portrait.png" srcset="/images/self-portrait.png" />
     <div class="greetings">
-      <h1> Hi, </h1>
+      <h1> Hi, </h1>  
       <p>
-        I’m a <span class="highlight">Software Developer</span>/bookworm/cat lover from Cebu, Philippines
+        I'm a <span class="highlight">Software Developer/</span> bookworm/cat lover from Cebu, Philippines
       </p>
     </div>
   </section>
@@ -49,7 +49,7 @@ header {
   text-align: left;
   vertical-align: bottom;
   height: calc(850px - 100px);
-  width: 50%;
+  width: 400px;
   h1 {
     margin: 0;
     font-size: 138px;
@@ -58,13 +58,18 @@ header {
   }
   p {
     font-size: 32px;
-    width: 600px;
+    width: 400px;
     position: absolute;
     top: 330px;
+    // > span:not(.highlight) {
+    //   position: relative;
+    //   z-index: 2;
+    // }
   }
 }
 
 .highlight {
   background: $powder-blue;
+  padding: 5px 10px;
 }
 </style>
