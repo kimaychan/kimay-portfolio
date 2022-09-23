@@ -12,6 +12,10 @@ body {
   font-family: $main-font;
 }
 
+ul {
+  list-style-type: none;
+}
+
 html, body, #__layout, #__nuxt {
   height: 100%;
 }

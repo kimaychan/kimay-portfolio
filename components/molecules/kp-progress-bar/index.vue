@@ -4,7 +4,7 @@
       {{ label }}
     </div>
     <div class="progress">
-      <div class="progress-estimate" :style="{ width: progressPercent+'%' }" />
+      <div class="progress-estimate" :style="{ width: progressPercent + '%' }" />
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default Vue.extend({
     },
     progressPercent: {
       type: Number,
-      default: 20
+      default: 0
     }
   }
 })
