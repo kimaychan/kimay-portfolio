@@ -1,3 +1,26 @@
+
+// fonts
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins/Poppins-Regular.ttf')  format('truetype'),
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('assets/fonts/Shrikhand/Shrikhand-Regular.ttf')  format('truetype'),
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('assets/fonts/Crimson_Text/CrimsonText-Regular.ttf')  format('truetype'),
+}
+
+@font-face {
+  font-family: 'Crimson Text Bold';
+  src: url('assets/fonts/Crimson_Text/CrimsonText-Bold.ttf')  format('truetype'),
+}
+
 // colors
 
 // palette 1
@@ -48,38 +71,7 @@ $powder-blue: #BBE2E9;
 $zucchini: #003F24;
 $everglade: #143F32;
 
-// animations
+// global declarations
 
-@keyframes slide-in {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes slide-in {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $cavern-pink; }
-}
-
+$main-font: Crimson Text;
+$regular: $black-cow;

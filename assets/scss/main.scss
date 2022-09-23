@@ -1,28 +1,15 @@
 @import './settings';
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('assets/fonts/Poppins/Poppins-Regular.ttf')  format('truetype'),
-}
-
-@font-face {
-  font-family: 'Shrikhand';
-  src: url('assets/fonts/Shrikhand/Shrikhand-Regular.ttf')  format('truetype'),
-}
-
-@font-face {
-  font-family: 'Crimson Text';
-  src: url('assets/fonts/Crimson_Text/CrimsonText-Regular.ttf')  format('truetype'),
-}
-
-@font-face {
-  font-family: 'Crimson Text Bold';
-  src: url('assets/fonts/Crimson_Text/CrimsonText-Bold.ttf')  format('truetype'),
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: $main-font;
 }
 
 html, body, #__layout, #__nuxt {
