@@ -3,23 +3,23 @@
   width: 1000px;
   .label {
     width: 10%;
-    color: white;
+    color: $black-cow;
     display: flex;
     align-items: center;
-    height: 40px;
-    text-transform: uppercase;
+    height: 6px;
     justify-content: flex-end;
     padding-right: 20px;
+    font-size: 16px;
   }
   .progress {
-    width: 90%;
-    background: $gray-blue;
+    width: 200px;
+    background: $light-grey;
     border-radius: 50px;
     position: relative;
     z-index: 0;
-    height: 40px;
+    height: 6px;
     .progress-estimate {
-      background: $cavern-pink;
+      background: $black-cow;
       height: 100%;
       position: absolute;
       z-index: 1;

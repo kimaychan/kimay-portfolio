@@ -5,7 +5,6 @@
     </div>
     <div class="progress">
       <div class="progress-estimate" :style="{ width: progressPercent+'%' }" />
-      <span class="progress-text">{{ progressPercent }}%</span>
     </div>
   </div>
 </template>
