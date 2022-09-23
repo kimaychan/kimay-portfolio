@@ -1,10 +1,10 @@
 <template>
-  <section class="app">
+  <div class="app">
     <kp-home />
     <kp-about />
     <kp-skills />
     <kp-projects />
-  </section>
+  </div>
 </template>
 
 <script lang="ts">

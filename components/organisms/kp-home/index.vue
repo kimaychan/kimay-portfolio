@@ -4,7 +4,12 @@
       <p>Mikee</p>
       <p>2022 Portfolio</p>
     </header>
-    <img class="home-banner" src="/images/self-portrait.png" srcset="/images/self-portrait.png" />
+    <img
+      class="home-banner"
+      src="/images/self-portrait.png"
+      srcset="/images/self-portrait.png"
+      alt="Self Portrait"
+    />
     <div class="greetings">
       <h1> Hi, </h1>  
       <p>
@@ -34,6 +39,7 @@ header {
 .home {
   background: $vista-white;
   text-align: center;
+  // height: 100vh;
 }
 
 .home-banner {
