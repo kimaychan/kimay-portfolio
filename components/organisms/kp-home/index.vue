@@ -61,10 +61,7 @@ header {
     width: 400px;
     position: absolute;
     top: 330px;
-    // > span:not(.highlight) {
-    //   position: relative;
-    //   z-index: 2;
-    // }
+    font-weight: bold;
   }
 }
 
