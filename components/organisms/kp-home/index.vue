@@ -37,7 +37,7 @@ header {
 }
 
 .home {
-  background: $vista-white;
+  // background: $vista-white;
   text-align: center;
   // height: 100vh;
 }

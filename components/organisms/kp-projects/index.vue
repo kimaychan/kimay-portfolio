@@ -14,6 +14,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .projects {
   height: 100vh;
-  background: $vista-white;
+  // background: $vista-white;
 }
 </style>

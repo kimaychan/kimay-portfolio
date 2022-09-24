@@ -28,7 +28,7 @@
 <style lang="scss" scoped>
 .about {
   height: 850px;
-  background: $vista-white;
+  // background: $vista-white;
   color: $regular;
   padding: 0 90px;
   position: relative;
@@ -50,13 +50,10 @@
     p:not(:last-child) {
       margin-bottom: 16px;
     }
-    // position: absolute;
-    // bottom: 0;
   }
 }
 
 .about-visual {
-
   z-index: 1;
   img {
     height: 300px;

@@ -92,7 +92,7 @@ export default Vue.extend({
 
 .skills {
   height: 100vh;
-  background: $vista-white;
+  // background: $vista-white;
   padding: 90px;
   color: $black-cow;
   position: relative;
@@ -100,27 +100,27 @@ export default Vue.extend({
     margin-bottom: 20px;
     font-size: 36px;
   }
-  &::after {
-    @include line(2px, 50%);
-    top: 50%;
-    right: 90px;
-  }
+  // &::after {
+  //   @include line(2px, 50%);
+  //   top: 40%;
+  //   right: 150px;
+  // }
 }
 
 h1 {
   font-size: 90px;
   text-align: right;
   position: relative;
-  &::before {
-    @include line(75%, 2px);
-    left: 0;
-    top: 50%;
-  }
+  // &::before {
+  //   @include line(75%, 2px);
+  //   left: 0;
+  //   top: 50%;
+  // }
 }
 
 .skill-details {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   > * {
     display: inline-block;
     vertical-align: top;
@@ -129,7 +129,7 @@ h1 {
 
 ul.skills-list {
   li:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
