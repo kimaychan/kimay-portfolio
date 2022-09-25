@@ -4,6 +4,7 @@
     <kp-about />
     <kp-skills />
     <kp-projects />
+    <kp-contact-me />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import KpHome from '~/components/organisms/kp-home/index.vue'
 import KpAbout from '~/components/organisms/kp-about/index.vue'
 import KpSkills from '~/components/organisms/kp-skills/index.vue'
 import KpProjects from '~/components/organisms/kp-projects/index.vue'
+import KpContactMe from '~/components/organisms/kp-contact-me/index.vue'
 
 export default Vue.extend({
   name: 'KpApp',
@@ -20,7 +22,8 @@ export default Vue.extend({
     KpHome,
     KpAbout,
     KpSkills,
-    KpProjects
+    KpProjects,
+    KpContactMe
   }
 })
 </script>
