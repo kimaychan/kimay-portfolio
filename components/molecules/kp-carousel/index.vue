@@ -64,6 +64,9 @@ export default Vue.extend({
       }
     },
     onKeyPress (e: KeyboardEvent) {
+      if (['ArrowRight', 'ArrowLeft'].includes(e.key)) {
+        e.preventDefault()
+      }
       switch (e.key) {
         case 'ArrowRight': this.next()
           break

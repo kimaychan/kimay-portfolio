@@ -9,7 +9,7 @@
       :type="type"
       :value="value"
       :placeholder="!(label && isFocus) ? placeholder : ''"
-      @input="$emit('input', $event)"
+      @input="$emit('input', $event.value)"
       @focus="isFocus = true"
       @focusout="isFocus = false"
     />
@@ -61,6 +61,8 @@ input {
   font-size: 16px;
   color: $regular;
   width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   &:focus {
     outline: none;
     border-bottom: 2px solid $regular;

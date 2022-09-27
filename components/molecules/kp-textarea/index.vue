@@ -29,12 +29,14 @@ textarea {
   padding: 0 8px 10px;
   border-radius: 5px;
   background: none;
-  height: 395px;
+  height: 200px;
   resize: none;
   color: $regular;
   line-height: 4ch;
   background-image: linear-gradient(transparent, transparent calc(4ch - 1.5px), $light-grey 0px);
   background-size: 100% 4ch;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   &:focus {
     outline: none;
     background-image: linear-gradient(transparent, transparent calc(4ch - 1.5px), $regular 0px);
@@ -43,7 +45,7 @@ textarea {
 
 .textarea-field {
   position: relative;
-  height: 90px;
+  height: 250px;
   label {
     position: absolute;
     top: 0;
