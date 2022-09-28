@@ -26,6 +26,7 @@ button {
   border: none;
   padding: 10px 50px;
   border-radius: 5px;
+  font-size: 18px;
   cursor: pointer;
   &:hover {
     filter: opacity(.9);

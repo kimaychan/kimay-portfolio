@@ -58,7 +58,7 @@ input {
   border: none;
   border-bottom: 2px solid $light-grey;
   padding: 8px 10px;
-  font-size: 16px;
+  font-size: 18px;
   color: $regular;
   width: 100%;
   font-family: 'Courier New', Courier, monospace;
@@ -71,12 +71,12 @@ input {
 
 .input-field {
   position: relative;
-  height: 50px;
+  height: 63px;
   min-width: 55px;
   label {
     position: absolute;
     top: 0;
-    font-size: 14px;
+    font-size: 18px;
     color: $secondary;
   }
   input {

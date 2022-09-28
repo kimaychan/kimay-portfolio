@@ -25,7 +25,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 textarea {
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0 8px 10px;
   border-radius: 5px;
   background: none;
@@ -49,7 +49,7 @@ textarea {
   label {
     position: absolute;
     top: 0;
-    font-size: 14px;
+    font-size: 18px;
     color: $secondary;
   }
   textarea {
