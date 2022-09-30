@@ -4,39 +4,47 @@
       <div class="text">
         <h1>Contact Me</h1>
         <p>Ask me anything or just say hi</p>
+        <div class="contact-links">
+          <a href="mailto:mikeebersabal@gmail.com" target="_blank">
+            <kp-icon type="google" />
+          </a>
+          <a href="https://www.instagram.com/kimaykee" target="_blank">
+            <kp-icon type="instagram" />
+          </a>
+          <a href="https://www.facebook.com/mikeeroseb/" target="_blank">
+            <kp-icon type="facebook" />
+          </a>
+          <a href="https://github.com/kimaychan" target="_blank">
+            <kp-icon type="github" />
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="form-container">
-      <kp-contact-form />
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import KpContactForm from '~/components/molecules/kp-contact-form/index.vue'
+import KpIcon from '~/components/atoms/kp-icon/index.vue'
 
 export default Vue.extend({
   name: 'KpContactMe',
   components: {
-    KpContactForm
+    KpIcon
   }
 })
 </script>
 
 <style lang="scss" scoped>
 .contact-me {
-  // background: $black-cow;
   height: 100vh;
-  padding: 15% 90px;
-  > * {
-    display: inline-block;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .banner {
-  // height: 100%;
   width: 500px;
-  vertical-align: top;
+  text-align: center;
   h1 {
     color: $regular;
     font-size: 48px;
@@ -46,12 +54,15 @@ export default Vue.extend({
     font-size: 24px;
   }
   .text {
-    // padding-top: 120px;
     height: 100%;
   }
 }
 
 .form-container {
   height: 100%;
+}
+
+.contact-links {
+  margin-top: 15px;
 }
 </style>

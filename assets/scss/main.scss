@@ -1,4 +1,5 @@
 @import './settings';
+@import './icons.scss';
 
 * {
   box-sizing: border-box;
@@ -15,6 +16,10 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 html, body, #__layout, #__nuxt {
