@@ -1,11 +1,11 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
+  router: {
+    base: '/kimay-portfolio/'
+  },
   head: {
     title: 'kimay-portfolio',
-    router: {
-      base: '/kimay-chan/kimay-portfolio/'
-    },
     htmlAttrs: {
       lang: 'en'
     },
