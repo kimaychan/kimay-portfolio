@@ -32,7 +32,7 @@ export default Vue.extend({
       },
       {
         name: 'Munimuni',
-        imageUrl: `${this.prefix}/images/ableton-project.jpg`
+        imageUrl: `${this.prefix}/images/munimuni-project.jpg`
       }]
       return projects
     }
