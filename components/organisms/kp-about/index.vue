@@ -16,14 +16,30 @@
     </div>
     <div class="about-visual">
       <img
-        src="/images/mikee.jpg"
-        srcset="/images/mikee.jpg"
+        :src="`${prefix}/images/mikee.jpg`"
+        :srcset="`${prefix}/images/mikee.jpg`"
         alt="Mikee"
         class="about-image"
       />
     </div>
   </section>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  name: 'KpAbout',
+  computed: {
+    prefix (): string {
+      if (process.env.NODE_ENV === 'production') {
+        return '/kimay-portfolio'
+      } else {
+        return ''
+      }
+    }
+  }
+})
+</script>
 
 <style lang="scss" scoped>
 .about {
