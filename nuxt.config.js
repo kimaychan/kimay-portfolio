@@ -4,7 +4,7 @@ export default {
   head: {
     title: 'kimay-portfolio',
     router: {
-      base: '/kimay-portfolio/'
+      base: '/kimay-chan/kimay-portfolio/'
     },
     htmlAttrs: {
       lang: 'en'
