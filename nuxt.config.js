@@ -55,9 +55,5 @@ export default {
         'node_modules',
       ]
     }
-  },
-
-  static: {
-    prefix: '/kimay-portfolio'
   }
 }
