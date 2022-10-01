@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "storybook": "npx nuxt storybook"
+    "storybook": "npx nuxt storybook",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "core-js": "^3.19.3",
@@ -25,6 +26,7 @@
     "@vue/composition-api": "^1.4.9",
     "i": "^0.3.7",
     "npm": "^8.5.5",
+    "push-dir": "^0.4.1",
     "sass": "^1.49.9",
     "sass-loader": "^10.2.1",
     "ts-node": "^10.7.0"
