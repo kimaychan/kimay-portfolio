@@ -16,19 +16,25 @@ export default Vue.extend({
   components: {
     KpCarousel
   },
-  data () {
-    return {
-      projects: [
-        {
-          name: 'Ableton',
-          imageUrl: '/images/ableton-project.jpg',
-          url: 'https://kimaychan.github.io/ableton-project/'
-        },
-        {
-          name: 'Munimuni',
-          imageUrl: '/images/munimuni-project.jpg'
-        }
-      ]
+  computed: {
+    prefix (): string {
+      if (process.env.NODE_ENV === 'production') {
+        return '/kimay-portfolio'
+      } else {
+        return ''
+      }
+    },
+    projects (): Array<{ name: string, imageUrl: string, url?: string }> {
+      const projects = [{
+        name: 'Ableton',
+        imageUrl: `${this.prefix}/images/ableton-project.jpg`,
+        url: 'https://kimaychan.github.io/ableton-project/'
+      },
+      {
+        name: 'Munimuni',
+        imageUrl: `${this.prefix}/images/ableton-project.jpg`
+      }]
+      return projects
     }
   },
   methods: {
