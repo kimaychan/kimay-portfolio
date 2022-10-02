@@ -93,7 +93,7 @@ export default Vue.extend({
 .content-layout {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px 40px;
   align-items: center;
 }
