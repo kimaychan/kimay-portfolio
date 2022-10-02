@@ -4,7 +4,7 @@
     <kp-about />
     <kp-skills />
     <kp-projects />
-    <kp-contact-me />
+    <!-- <kp-contact-me /> -->
   </div>
 </template>
 

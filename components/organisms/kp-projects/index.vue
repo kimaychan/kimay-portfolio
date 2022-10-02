@@ -50,21 +50,20 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .projects {
   color: $regular;
-  height: 100vh;
-  padding: {
-    left: 90px;
-    top: 150px;
-  }
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
   margin-bottom: 30px;
   font-size: 42px;
+  text-align: left;
 }
 
 .carousel-container {
-  display: inline-block;
-  vertical-align: middle;
   width: 100%;
 }
 </style>

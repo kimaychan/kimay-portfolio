@@ -40,9 +40,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-
 .home {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -103,9 +102,6 @@ header {
 @media only screen and (min-width: $breakpoint-med){
   .content-layout {
     align-items: center;
-  }
-  .greetings {
-    // margin-left: 40px;
   }
 }
 

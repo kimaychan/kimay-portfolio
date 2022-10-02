@@ -43,7 +43,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .about {
-  height: 100vh;
+  min-height: 100vh;
   color: $regular;
 }
 

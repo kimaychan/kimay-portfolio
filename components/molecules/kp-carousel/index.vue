@@ -1,8 +1,5 @@
 <template>
   <div class="carousel">
-    <p>
-      use arrow keys to navigate
-    </p>
     <div ref="inner" class="inner" :style="innerStyles">
       <div class="card"
         v-for="(c, i) in cards"
@@ -17,6 +14,10 @@
         </div>
       </div>
     </div>
+    <p class="controls">
+      <button @click="previous">previous</button>
+      <button @click="next">next</button>
+    </p>
   </div>
 </template>
 
@@ -177,5 +178,30 @@ export default Vue.extend({
 p {
   color: $regular;
   margin-bottom: 10px;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  button {
+    font-family: $main-font;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    &:not(:first-child) {
+      margin-left: 20px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        background: $regular;
+        height: 100%;
+        width: 1px;
+        left: -10px;
+      }
+    }
+  }
 }
 </style>
