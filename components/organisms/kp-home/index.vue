@@ -5,14 +5,14 @@
       <p>2022 Portfolio</p>
     </header>
     <div class="content-layout">
-      <div class="banner-container">
+      <!-- <div class="banner-container"> -->
         <img
           class="home-banner"
           :src="`${prefix}/images/self-portrait.png`"
           :srcset="`${prefix}/images/self-portrait.png`"
           alt="Self Portrait"
         />
-      </div>
+      <!-- </div> -->
       <div class="greetings">
         <h1> Hi, </h1>  
         <p>
@@ -40,6 +40,11 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+
+.home {
+  height: 100vh;
+}
+
 header {
   font-size: 24px;
   display: flex;
@@ -50,8 +55,7 @@ header {
 }
 
 .content-layout {
-  height: calc(100vh - 71.5px);
-  align-items: center;
+  height: calc(100vh - 70px);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -60,10 +64,11 @@ header {
 .greetings {
   color: $regular;
   text-align: left;
-  height: 100%;
-  width: 400px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
+  overflow-wrap: wrap;
+  padding: 20px 40px;
   h1 {
     margin: 0;
     font-size: 9em;
@@ -80,27 +85,42 @@ header {
   padding: 5px 10px;
 }
 
-@media only screen and (min-width: $breakpoint-med){
+.greetings {
+  overflow-wrap: wrap;
+}
+
+.banner-container {
+  height: 100%;
+}
+
+@media only screen and (min-width: $breakpoint-large) {
   .greetings {
-    margin-left: 40px;
     justify-content: center;
+    height: 100%;
   }
 }
 
-@media only screen and (max-width: $breakpoint-med){ 
-  .home-banner {
-    height: 60vh;
-    margin-top: 2rem;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-small) {
-  .greetings {
-    margin-top: 3rem;
+@media only screen and (min-width: $breakpoint-med){
+  .content-layout {
     align-items: center;
-    p {
-      text-align: center;
+  }
+  .greetings {
+    // margin-left: 40px;
+  }
+}
+
+
+@media only screen and (max-width: $breakpoint-large){ 
+  .greetings {
+    h1 {
+      font-size: 4em;
     }
+    p {
+      font-size: 1.5em;
+    }
+  }
+  .home-banner {
+    height: 55vh;
   }
 }
 </style>

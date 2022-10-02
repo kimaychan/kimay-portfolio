@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="about content-layout">
     <div class="about-description">
       <h1>a little bit about me...</h1>
       <div class="text">
@@ -43,53 +43,67 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .about {
-  height: 850px;
-  // background: $vista-white;
+  height: 100vh;
   color: $regular;
-  padding: 0 90px;
-  position: relative;
-  > * {
-    display: inline-block;
-  }
 }
 
 .about-description {
-  width: 650px;
-  position: absolute;
-  bottom: 90px;
   h1 {
     font-size: 42px;
     margin-bottom: 60px;
   }
   .text {
     font-size: 18px;
+    overflow-wrap: wrap;
     p:not(:last-child) {
       margin-bottom: 16px;
     }
   }
+  p {
+    max-width: 650px;
+  }
 }
 
 .about-visual {
-  z-index: 1;
   img {
-    height: 300px;
-  }
-  position: relative;
-  &::after {
-    position: absolute;
-    content: '';
-    height: 300px;
-    background: $sandy-beach;
-    width: 100%;
-    top: 30px;
-    left: 30px;
-    z-index: -1;
+    height: 36vh;
+    box-shadow: 30px 30px $sandy-beach;
   }
 }
 
-.about-visual {
-  position: absolute;
-  top: 100px;
-  right: 120px;
+.content-layout {
+  display: flex;
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .content-layout {
+    padding: 90px 0;
+    justify-content: space-between;
+  }
+  .about-description {
+    margin-top: auto;
+    padding-left: 90px;
+  }
+  .about-visual {
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-large) {
+  .content-layout {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .about-description {
+    margin-top: 5rem;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-visual {
+    text-align: center;
+  }
 }
 </style>
