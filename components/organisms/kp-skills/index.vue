@@ -1,8 +1,8 @@
 <template>
-  <section class="skills">
-    <h1>My <br/> Skills</h1>
+  <section class="skills content-layout">
+    <h1>My Skills</h1>
     <div class="skill-details">
-      <div class="frontend-skills">
+      <div class="frontend-skills skills-set">
         <h2>Frontend</h2>
         <ul class="skills-list">
           <li v-for="(s, i) in frontendSkillList" :key="i">
@@ -10,7 +10,7 @@
           </li>
         </ul>
       </div>
-      <div class="backend-skills">
+      <div class="backend-skills skills-set">
         <h2>Backend</h2>
         <ul class="skills-list">
           <li v-for="(s, i) in backendSkillList" :key="i">
@@ -90,41 +90,44 @@ export default Vue.extend({
   width: $width;
 }
 
-.skills {
+.content-layout {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  // background: $vista-white;
-  padding: 90px;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.skills {
+  // padding: 90px;
   color: $black-cow;
-  position: relative;
   h2 {
     margin-bottom: 20px;
     font-size: 36px;
   }
-  // &::after {
-  //   @include line(2px, 50%);
-  //   top: 40%;
-  //   right: 150px;
-  // }
 }
 
 h1 {
   font-size: 90px;
-  text-align: right;
-  position: relative;
-  // &::before {
-  //   @include line(75%, 2px);
-  //   left: 0;
-  //   top: 50%;
-  // }
+  text-align: center;
+  // position: relative;
+}
+
+h2 {
+  text-align: center;
 }
 
 .skill-details {
-  position: absolute;
-  bottom: 20px;
-  > * {
-    display: inline-block;
-    vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  > *:not(:first-child) {
+    margin-top: 40px;
   }
+}
+
+.skills-set {
+  max-width: 650px;
 }
 
 ul.skills-list {
@@ -133,7 +136,25 @@ ul.skills-list {
   }
 }
 
-.backend-skills {
-  margin-left: 70px;
+@media only screen and (min-width: $breakpoint-large) {
+  .content-layout {
+    padding: 90px;
+    align-items: unset;
+  }
+  h1 {
+    text-align: right;
+  }
+  .backend-skills {
+    margin-left: 70px;
+  }
+  .skill-details {
+    flex-direction: unset;
+    > .skills-set:not(:first-child) {
+      margin-top: unset;
+    }
+  }
+  h2 {
+    text-align: left;
+  }
 }
 </style>
