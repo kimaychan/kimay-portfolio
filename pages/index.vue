@@ -1,7 +1,7 @@
 <template>
-  <div class="app">
-
-  </div>
+  <section class="app">
+    <h1>hello world</h1>
+  </section>
 </template>
 
 <script lang="ts">
@@ -13,5 +13,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import './style.scss';
+h1 {
+  color: white;
+}
 </style>

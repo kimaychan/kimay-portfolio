@@ -185,7 +185,7 @@ p {
   display: flex;
   justify-content: center;
   button {
-    font-family: $main-font;
+    // font-family: $main-font;
     background: none;
     border: none;
     text-decoration: underline;

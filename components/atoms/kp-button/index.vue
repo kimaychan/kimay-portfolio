@@ -22,7 +22,7 @@ button {
   width: 140px;
   background: $black-cow;
   color: $vista-white;
-  font-family: $main-font;
+  // font-family: $main-font;
   border: none;
   padding: 10px 50px;
   border-radius: 5px;
