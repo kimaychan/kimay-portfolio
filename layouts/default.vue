@@ -26,8 +26,12 @@
       :style="{ bottom: '-250px', top: 'auto', right: '20px' }"
     />
     <div class="glass-container">
-      <div class="background"></div>
-      <nuxt-child />
+      <div class="background-wrapper">
+        <div class="background"></div>
+      </div>
+      <div class="content">
+        <nuxt-child />
+      </div>
     </div>
     <div class="stars"></div>
     <div class="twinkling"></div>
@@ -67,7 +71,13 @@ export default Vue.extend({
   bottom: 0;
   margin: auto;
   z-index: 3;
-  >.background {
+  .background-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .background {
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -84,6 +94,10 @@ export default Vue.extend({
       height: 100%;
       border-radius: inherit;
     }
+  }
+  >.content {
+    width: 100%;
+    height: 100%;
   }
 }
 
