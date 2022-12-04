@@ -1,0 +1,87 @@
+// colors
+
+// palette 1
+$rhino: #334666;
+$gray-blue: #7484A6;
+$rock-blue: #9DABCB;
+$cavern-pink: #EBB7C3;
+$faded-pink: #C99FA9;
+
+// palette 2
+$horizon: #478BA2;
+$mandy: #DE5B6D;
+$sunset-orange: #E9765B;
+$blush: #F2A490;
+$pale-aqua: #B9D4DB;
+
+// palette 3
+$pink-flare: #E5C1CD;
+$almond: #F3DBCF;
+$gray-suit: #C9BBCB;
+$cadet-blue: #B6B2C2;
+$heather: #AAC9CE;
+
+$sea-pink: #E79796;
+$radical-red: #FE3B6D;
+$dusty-pink: #D68186;
+
+// palette 4
+$pinkish-brown: #A6776A;
+$petite-orchid: #CE9C90;
+$rodeo-dust: #D8AE9C;
+$oyster-pink: #E6D0CA;
+$white-rock: #EEE4DB;
+
+// palette 5
+$spring-sage: #C6CDBC;
+$soft-peach: #EDCCB4;
+$cream-tan: #EADED4;
+$dark-blush: #C97D68;
+
+//palette 6
+$vista-white: #FFF8F2;
+$black-cow: #4D4948;
+$sandy-beach: #FEECC8;
+$dusty-blue: #518DB1;
+$powder-blue: #BBE2E9;
+$white-grey: #ECECEC;
+$light-grey: #D9D9D9;
+$dark-grey: #7b7776;
+$zucchini: #003F24;
+$everglade: #143F32;
+
+// palette 7
+$watermelon: #FD475E;
+$purplish-pink: #C4659F;
+$lavender-blue: #7D8AFA;
+
+// palette 8
+$pink-pearl: #EEAECA;
+$jordy-blue: #94BBE9;
+
+// global declarations
+
+// $main-font: "Crimson Text";
+// $background: linear-gradient(180deg, $pink-pearl 45%, $jordy-blue 100%);
+$regular: $black-cow;
+$secondary: $dark-grey;
+
+// layout
+
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+// fonts
+
+// @font-face {
+//   font-family: 'Spectral';
+//   src: url('./fonts/Spectral/Spectral-Regular.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Spectral Bold';
+//   src: url('./fonts/Spectral/Spectral-Bold.ttf');
+// }
+
+$main-font: '';
