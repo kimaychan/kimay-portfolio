@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'glass-morphism-v1'
+  layout: 'glass-morphism-v2'
 })
 </script>
 
