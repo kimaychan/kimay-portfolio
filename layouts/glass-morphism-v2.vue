@@ -60,8 +60,19 @@ section {
     border-radius: 20px;
     position: relative;
     backdrop-filter: blur(50px);
-    box-shadow: 3px 3px 100px rgba(227, 235, 241, 99);
-    border: 1px solid rgba(227, 235, 241, 8);
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      border-radius: inherit;
+      box-shadow: 3px 3px 100px rgba(227, 235, 241, 99);
+      border: 1px solid rgba(227, 235, 241, 8);
+      z-index: 4;
+      opacity: .6;
+      top: -1px;
+      left: -1px;
+    }
     &::after {
       position: absolute;
       content: '';
