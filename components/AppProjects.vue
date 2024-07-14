@@ -11,22 +11,15 @@
 export default defineComponent({
   name: 'KpProjects',
   computed: {
-    prefix (): string {
-      if (process.env.NODE_ENV === 'production') {
-        return '/kimay-portfolio'
-      } else {
-        return ''
-      }
-    },
     projects (): Array<{ name: string, imageUrl: string, url?: string }> {
       const projects = [{
         name: 'Ableton',
-        imageUrl: `${this.prefix}/images/ableton-project.jpg`,
+        imageUrl: `/images/ableton-project.jpg`,
         url: 'https://kimaychan.github.io/ableton-project/'
       },
       {
         name: 'Munimuni',
-        imageUrl: `${this.prefix}/images/munimuni-project.jpg`
+        imageUrl: `/images/munimuni-project.jpg`
       }]
       return projects
     }
