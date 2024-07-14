@@ -12,7 +12,7 @@ export default defineComponent({
   name: 'KpProjects',
   computed: {
     projects (): Array<{ name: string, imageUrl: string, url?: string }> {
-      const projects = [{
+      return [{
         name: 'Ableton',
         imageUrl: '/images/ableton-project.jpg',
         url: 'https://kimaychan.github.io/ableton-project/'
@@ -21,7 +21,6 @@ export default defineComponent({
         name: 'Munimuni',
         imageUrl: '/images/munimuni-project.jpg'
       }]
-      return projects
     }
   },
   methods: {
