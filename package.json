@@ -6,8 +6,7 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "nuxi start",
-    "generate": "nuxi generate",
-    "deploy": "push-dir --dir=output --branch=gh-pages --cleanup"
+    "generate": "nuxi generate"
   },
   "devDependencies": {
     "nuxt": "^3.12.3",
