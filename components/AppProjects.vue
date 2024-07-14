@@ -14,12 +14,12 @@ export default defineComponent({
     projects (): Array<{ name: string, imageUrl: string, url?: string }> {
       return [{
         name: 'Ableton',
-        imageUrl: '/images/ableton-project.jpg',
+        imageUrl: '/kimay-portfolio/images/ableton-project.jpg',
         url: 'https://kimaychan.github.io/ableton-project/'
       },
       {
         name: 'Munimuni',
-        imageUrl: '/images/munimuni-project.jpg'
+        imageUrl: '/kimay-portfolio/images/munimuni-project.jpg'
       }]
     }
   },
