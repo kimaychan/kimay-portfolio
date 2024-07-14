@@ -2,18 +2,8 @@
   <span :class="`icon-${type}`" />
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'KpIcon',
-  props: {
-    type: {
-      type: String,
-      required: true,
-      default: 'phone'
-    }
-  }
-})
+<script lang="ts" setup>
+defineProps<{ type: string }>()
 </script>
 
 <style lang="scss" scoped>

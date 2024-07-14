@@ -6,34 +6,22 @@
         <p>Ask me anything or just say hi</p>
         <div class="contact-links">
           <a href="mailto:mikeebersabal@gmail.com" target="_blank">
-            <kp-icon type="google" />
+            <BaseIcon type="google" />
           </a>
           <a href="https://www.instagram.com/kimaykee" target="_blank">
-            <kp-icon type="instagram" />
+            <BaseIcon type="instagram" />
           </a>
           <a href="https://www.facebook.com/mikeeroseb/" target="_blank">
-            <kp-icon type="facebook" />
+            <BaseIcon type="facebook" />
           </a>
           <a href="https://github.com/kimaychan" target="_blank">
-            <kp-icon type="github" />
+            <BaseIcon type="github" />
           </a>
         </div>
       </div>
     </div>
   </section>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-import KpIcon from '~/components/atoms/kp-icon/index.vue'
-
-export default Vue.extend({
-  name: 'KpContactMe',
-  components: {
-    KpIcon
-  }
-})
-</script>
 
 <style lang="scss" scoped>
 .contact-me {

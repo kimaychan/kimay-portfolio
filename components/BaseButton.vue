@@ -4,17 +4,8 @@
   </button>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'KpButton',
-  props: {
-    type: {
-      type: String,
-      default: ''
-    }
-  }
-})
+<script lang="ts" setup>
+defineProps<{ type?: string; }>()
 </script>
 
 <style lang="scss" scoped>

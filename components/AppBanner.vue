@@ -2,17 +2,15 @@
   <section class="home">
     <header>
       <p>Mikee</p>
-      <p>2022 Portfolio</p>
+      <p>2024 Portfolio</p>
     </header>
     <div class="content-layout">
-      <!-- <div class="banner-container"> -->
-        <img
-          class="home-banner"
-          :src="`${prefix}/images/self-portrait.png`"
-          :srcset="`${prefix}/images/self-portrait.png`"
-          alt="Self Portrait"
-        />
-      <!-- </div> -->
+      <img
+        class="home-banner"
+        src="/images/self-portrait.png"
+        srcset="/images/self-portrait.png"
+        alt="Self Portrait"
+      />
       <div class="greetings">
         <h1> Hi, </h1>  
         <p>
@@ -22,22 +20,6 @@
     </div>
   </section>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'KpHome',
-  computed: {
-    prefix (): string {
-      if (process.env.NODE_ENV === 'production') {
-        return '/kimay-portfolio'
-      } else {
-        return ''
-      }
-    }
-  }
-})
-</script>
 
 <style lang="scss" scoped>
 .home {

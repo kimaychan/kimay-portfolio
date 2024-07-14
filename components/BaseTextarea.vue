@@ -5,21 +5,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'KpTextarea',
-  props: {
-    id: {
-      type: String,
-      default: ''
-    },
-    label: {
-      type: String,
-      default: 'label'
-    }
-  }
-})
+<script lang="ts" setup>
+defineProps<{
+  id?: string;
+  label?: string;
+}>()
 </script>
 
 <style lang="scss" scoped>

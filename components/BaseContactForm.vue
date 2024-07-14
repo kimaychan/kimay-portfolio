@@ -1,43 +1,33 @@
 <template>
   <form @submit.prevent="submit">
     <div class="sender-info">
-      <kp-input
+      <BaseInputField
         id="name"
         v-model="name"
         type="text"
         label="name"
       />
-      <kp-input
+      <BaseInputField
         id="email"
         type="text"
         label="email"
       />
     </div>
-    <kp-textarea
+    <BaseTextarea
       id="message"
       v-model="message"
       label="message"
       class="message"
     />
-    <kp-button type="submit" @click="submit">
+    <BaseButton type="submit" @click="submit">
       Submit
-    </kp-button>
+    </BaseButton>
   </form>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import KpInput from '~/components/molecules/kp-input-field/index.vue'
-import KpTextarea from '~/components/molecules/kp-textarea/index.vue'
-import KpButton from '~/components/atoms/kp-button/index.vue'
-
-export default Vue.extend({
+export default defineComponent({
   name: 'KpContactForm',
-  components: {
-    KpButton,
-    KpInput,
-    KpTextarea
-  },
   data () {
     return {
       name: '',
