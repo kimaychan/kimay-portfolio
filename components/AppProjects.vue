@@ -2,20 +2,14 @@
   <div class="projects">
     <h1>Projects</h1>
     <div class="carousel-container">
-      <kp-carousel :items="projects" @card:click="redirectToProject" />
+      <BaseCarousel :items="projects" @card:click="redirectToProject" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import KpCarousel from '~/components/molecules/kp-carousel/index.vue'
-
-export default Vue.extend({
+export default defineComponent({
   name: 'KpProjects',
-  components: {
-    KpCarousel
-  },
   computed: {
     prefix (): string {
       if (process.env.NODE_ENV === 'production') {

@@ -1,3 +1,23 @@
+<template>
+  <div class="progress-bar-wrapper">
+    <div class="label">
+      {{ label }}
+    </div>
+    <div class="progress">
+      <div class="progress-estimate" :style="{ width: progressPercent + '%' }" />
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+withDefaults(defineProps<{
+  label?: string;
+  progressPercent?: number;
+}>(), { progressPercent: 0})
+
+</script>
+
+<style lang="scss" scoped>
 .progress-bar-wrapper {
   display: flex;
   // width: 1000px;
@@ -39,3 +59,4 @@
     }
   }
 }
+</style>

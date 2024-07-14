@@ -1,9 +1,9 @@
-export default {
+export default defineNuxtConfig({
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
-  router: {
-    base: '/kimay-portfolio/'
-  },
+
+  devtools: { enabled: true },
+
   head: {
     title: 'kimay-portfolio',
     htmlAttrs: {
@@ -20,40 +20,17 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/scss/main.scss'],
+  css: ['~/assets/scss/main.scss', '~/assets/scss/icons.scss'],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-    '@nuxtjs/style-resources'
-  ],
-
-  styleResources: {
-    scss: ['~/assets/scss/_settings.scss'],
-  },
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
-
-  storybook: {
-    modules: {
-      exclude: [
-        'node_modules',
-      ]
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/_settings.scss" as *;'
+        }
+      }
     }
-  }
-}
+  },
+
+  compatibilityDate: '2024-07-14'
+})

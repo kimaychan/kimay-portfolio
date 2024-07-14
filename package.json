@@ -3,32 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "storybook": "npx nuxt storybook",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
-  },
-  "dependencies": {
-    "core-js": "^3.19.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.6.14",
-    "vue-server-renderer": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi start",
+    "generate": "nuxi generate",
+    "deploy": "push-dir --dir=output --branch=gh-pages --cleanup"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.8",
-    "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/storybook": "^4.3.0",
     "@nuxtjs/style-resources": "^1.2.1",
-    "@vue/composition-api": "^1.4.9",
-    "i": "^0.3.7",
-    "npm": "^8.5.5",
-    "push-dir": "^0.4.1",
-    "sass": "^1.49.9",
-    "sass-loader": "^10.2.1",
-    "ts-node": "^10.7.0"
+    "nuxt": "^3.12.3",
+    "sass": "^1.49.9"
+  },
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
+  "dependencies": {
+    "push-dir": "^0.4.1"
   }
 }

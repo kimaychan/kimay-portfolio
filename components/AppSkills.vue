@@ -6,7 +6,7 @@
         <h2>Frontend</h2>
         <ul class="skills-list">
           <li v-for="(s, i) in frontendSkillList" :key="i">
-            <kp-progress-bar :label="s.label" :progress-percent="s.percent" />
+            <BaseProgressBar :label="s.label" :progress-percent="s.percent" />
           </li>
         </ul>
       </div>
@@ -14,7 +14,7 @@
         <h2>Backend</h2>
         <ul class="skills-list">
           <li v-for="(s, i) in backendSkillList" :key="i">
-            <kp-progress-bar :label="s.label" :progress-percent="s.percent" />
+            <BaseProgressBar :label="s.label" :progress-percent="s.percent" />
           </li>
         </ul>
       </div>
@@ -23,13 +23,8 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import KpProgressBar from '~/components/molecules/kp-progress-bar/index.vue'
-export default Vue.extend({
+export default defineComponent({
   name: 'KpSkills',
-  components: {
-    KpProgressBar
-  },
   data () {
     return {
       frontendSkills: [
