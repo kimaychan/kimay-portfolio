@@ -1,6 +1,9 @@
 export default defineNuxtConfig({
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: false,
+  app: {
+    baseURL: '/kimay-portfolio/'
+  },
   head: {
     title: 'kimay-portfolio',
     htmlAttrs: {
