@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - gh-pages
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
           node-version: "20"
       # Pick your own package manager and build script
       - run: npm install
-      - run: npm run generate --preset github_pages
+      - run: npm run build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
