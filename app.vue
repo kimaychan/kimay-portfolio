@@ -1,10 +1,12 @@
 <template>
   <div class="app">
-    <AppBanner/>
-    <AppAbout />
-    <AppSkills />
-    <AppProjects />
-    <AppContactMe />
+    <ClientOnly>
+      <AppBanner/>
+      <AppAbout />
+      <AppSkills />
+      <AppProjects />
+      <AppContactMe />
+    </ClientOnly>
   </div>
 </template>
 
