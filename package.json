@@ -10,7 +10,6 @@
     "deploy": "push-dir --dir=output --branch=gh-pages --cleanup"
   },
   "devDependencies": {
-    "@nuxtjs/style-resources": "^1.2.1",
     "nuxt": "^3.12.3",
     "sass": "^1.49.9"
   },
